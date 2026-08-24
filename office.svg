@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <defs>
+    <!-- Gradiente de iluminación de la oficina -->
+    <radialGradient id="desk-light" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1c23" />
+      <stop offset="60%" stop-color="#0d0e12" />
+      <stop offset="100%" stop-color="#030304" />
+    </radialGradient>
+    
+    <!-- Sombras de las paredes -->
+    <linearGradient id="wall-shadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050508" />
+      <stop offset="100%" stop-color="#12141c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Pared del fondo -->
+  <rect width="1000" height="420" fill="url(#wall-shadow)" />
+  
+  <!-- Suelo -->
+  <polygon points="0,420 1000,420 1000,600 0,600" fill="#08080a" />
+  
+  <!-- Patrón de baldosas en el suelo -->
+  <path d="M 0,420 L 1000,420 M 0,460 L 1000,460 M 0,510 L 1000,510 M 0,560 L 1000,560" stroke="#111318" stroke-width="2" />
+  <path d="M 200,420 L 100,600 M 400,420 L 350,600 M 600,420 L 650,600 M 800,420 L 900,600" stroke="#111318" stroke-width="2" />
+
+  <!-- Postergado / Cuadros en la pared -->
+  <rect x="420" y="80" width="160" height="100" fill="#15171e" stroke="#252833" stroke-width="3" />
+  <text x="500" y="135" fill="#3a3d4a" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">CELEBRATE!</text>
+  <circle cx="500" cy="110" r="15" fill="#252833" />
+
+  <!-- Cables colgando del techo -->
+  <path d="M 150,0 Q 180,60 210,0" fill="none" stroke="#0a0a0d" stroke-width="4" />
+  <path d="M 780,0 Q 820,80 850,0" fill="none" stroke="#0a0a0d" stroke-width="5" />
+
+  <!-- Escritorio principal -->
+  <polygon points="150,450 850,450 900,600 100,600" fill="url(#desk-light)" stroke="#222530" stroke-width="2" />
+
+  <!-- Monitor en el escritorio -->
+  <rect x="430" y="320" width="140" height="90" rx="5" fill="#0a0b0e" stroke="#1c1e24" stroke-width="4" />
+  <rect x="440" y="330" width="120" height="70" fill="#021008" />
+  <!-- Líneas de código en el monitor -->
+  <path d="M 448,345 L 490,345 M 448,355 L 520,355 M 448,365 L 470,365 M 448,380 L 510,380" stroke="#00ff41" stroke-width="2" opacity="0.7" />
+  <!-- Soporte del monitor -->
+  <rect x="485" y="410" width="30" height="40" fill="#14161d" />
+
+  <!-- Vasos de café / Detritos -->
+  <rect x="260" y="415" width="25" height="40" rx="2" fill="#181a20" stroke="#2c303c" stroke-width="1" />
+  <ellipse cx="272.5" cy="415" rx="12.5" ry="3" fill="#3c4050" />
+
+  <!-- Ventilador de escritorio (Clásico de FNAF) -->
+  <circle cx="720" cy="380" r="30" fill="none" stroke="#2a2d37" stroke-width="4" />
+  <path d="M 720,350 L 720,410 M 690,380 L 750,380" stroke="#2a2d37" stroke-width="3" />
+  <rect x="710" y="410" width="20" height="40" fill="#181a20" />
+
+  <!-- Sombras de iluminación general -->
+  <rect width="1000" height="600" fill="#000000" opacity="0.25" />
+</svg>

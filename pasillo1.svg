@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <defs>
+    <!-- Punto de fuga para el pasillo largo -->
+    <radialGradient id="hall-tunnel" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="70%" stop-color="#0c0e14" />
+      <stop offset="100%" stop-color="#181c26" />
+    </radialGradient>
+  </defs>
+
+  <!-- Fondo / Perspectiva del pasillo -->
+  <rect width="1000" height="600" fill="url(#hall-tunnel)" />
+
+  <!-- LÍNEAS DE PERSPECTIVA DEL PASILLO (Túnel) -->
+  <!-- Pared Izquierda -->
+  <polygon points="0,0 350,220 350,380 0,600" fill="#10121a" stroke="#1d2230" stroke-width="2" />
+  <!-- Pared Derecha -->
+  <polygon points="1000,0 650,220 650,380 1000,600" fill="#0d0f17" stroke="#1d2230" stroke-width="2" />
+  <!-- Techo -->
+  <polygon points="0,0 1000,0 650,220 350,220" fill="#08090d" stroke="#151824" stroke-width="2" />
+  <!-- Suelo -->
+  <polygon points="0,600 1000,600 650,380 350,380" fill="#050608" stroke="#151824" stroke-width="2" />
+
+  <!-- Marcos de puertas laterales en la pared del pasillo -->
+  <polygon points="80,120 220,160 220,440 80,480" fill="#08090d" stroke="#252b3d" stroke-width="3" />
+  <polygon points="920,120 780,160 780,440 920,480" fill="#06070a" stroke="#252b3d" stroke-width="3" />
+
+  <!-- Luces de techo en la distancia -->
+  <ellipse cx="500" cy="230" rx="40" ry="5" fill="#222838" />
+  <ellipse cx="500" cy="230" rx="20" ry="2" fill="#4a5573" />
+
+  <!-- Azulejos del suelo en perspectiva -->
+  <line x1="350" y1="380" x2="0" y2="600" stroke="#1a1e2b" stroke-width="3" />
+  <line x1="650" y1="380" x2="1000" y2="600" stroke="#1a1e2b" stroke-width="3" />
+  <path d="M 300,410 L 700,410 M 230,450 L 770,450 M 140,500 L 860,500 M 30,560 L 970,560" stroke="#12151f" stroke-width="2" />
+
+  <!-- Cables en las paredes -->
+  <path d="M 0,100 Q 180,180 350,230" fill="none" stroke="#050507" stroke-width="4" />
+  <path d="M 1000,80 Q 800,170 650,220" fill="none" stroke="#050507" stroke-width="5" />
+
+  <!-- Oscuridad profunda al fondo del pasillo -->
+  <rect x="350" y="220" width="300" height="160" fill="#000000" />
+
+  <!-- Etiqueta de la cámara -->
+  <rect x="40" y="40" width="180" height="35" fill="#050508" stroke="#1c1e29" stroke-width="2" rx="3" />
+  <text x="130" y="63" fill="#3a3e52" font-family="'Courier New', monospace" font-size="14" font-weight="bold" text-anchor="middle">CAM HALLWAY</text>
+
+  <!-- Efecto CRT / Scanlines -->
+  <path d="M 0,30 L 1000,30 M 0,90 L 1000,90 M 0,150 L 1000,150 M 0,210 L 1000,210 M 0,270 L 1000,270 M 0,330 L 1000,330 M 0,390 L 1000,390 M 0,450 L 1000,450 M 0,510 L 1000,510 M 0,570 L 1000,570" stroke="#ffffff" stroke-width="1" opacity="0.03" />
+</svg>

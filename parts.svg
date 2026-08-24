@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <!-- Fondo y Paredes Oscuras -->
+  <rect width="1000" height="600" fill="#0d0d0d"/>
+  <path d="M 0 0 L 200 150 L 200 450 L 0 600 Z" fill="#141414" stroke="#000" stroke-width="2"/>
+  <path d="M 1000 0 L 800 150 L 800 450 L 1000 600 Z" fill="#141414" stroke="#000" stroke-width="2"/>
+  <polygon points="200,150 800,150 800,450 200,450" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+  <polygon points="0,600 200,450 800,450 1000,600" fill="#080808"/>
+
+  <!-- Luz Tenue Superior -->
+  <ellipse cx="500" cy="150" rx="300" ry="80" fill="rgba(255, 230, 150, 0.05)"/>
+  
+  <!-- Estantes con Repuestos -->
+  <rect x="250" y="200" width="180" height="200" fill="#222" stroke="#444" stroke-width="3"/>
+  <line x1="250" y1="260" x2="430" y2="260" stroke="#444" stroke-width="3"/>
+  <line x1="250" y1="320" x2="430" y2="320" stroke="#444" stroke-width="3"/>
+  
+  <!-- Piezas sueltas en estantes -->
+  <circle cx="290" cy="240" r="15" fill="#333" stroke="#555"/>
+  <rect x="340" y="225" width="30" height="30" fill="#2a2a2a" stroke="#555"/>
+  <ellipse cx="300" cy="295" rx="20" ry="12" fill="#333" stroke="#555"/>
+  <rect x="360" y="285" width="40" height="25" fill="#222" stroke="#444"/>
+
+  <!-- Mesa de Reparaciones -->
+  <polygon points="520,350 750,350 780,440 490,440" fill="#252525" stroke="#333"/>
+  <rect x="510" y="440" width="15" height="80" fill="#1a1a1a"/>
+  <rect x="755" y="440" width="15" height="80" fill="#1a1a1a"/>
+  
+  <!-- Cabeza de Animatrónico Desarmada en la mesa -->
+  <circle cx="630" cy="340" r="25" fill="#111" stroke="#ff3333" stroke-width="1.5"/>
+  <circle cx="620" cy="335" r="4" fill="#ff0000"/>
+  <circle cx="640" cy="335" r="4" fill="#ff0000"/>
+  
+  <!-- Cables Colgando -->
+  <path d="M 300 150 Q 310 200 280 230" fill="none" stroke="#aa2222" stroke-width="3"/>
+  <path d="M 310 150 Q 320 180 330 220" fill="none" stroke="#2222aa" stroke-width="2"/>
+  <path d="M 700 150 Q 680 220 720 280" fill="none" stroke="#aaaa22" stroke-width="3"/>
+</svg>

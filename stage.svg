@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <defs>
+    <!-- Gradientes de luz para el escenario -->
+    <radialGradient id="spotlight-left" cx="25%" cy="10%" r="70%">
+      <stop offset="0%" stop-color="#3a2312" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#020203" stop-opacity="0.95" />
+    </radialGradient>
+    <radialGradient id="spotlight-center" cx="50%" cy="10%" r="70%">
+      <stop offset="0%" stop-color="#122a3a" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#020203" stop-opacity="0.95" />
+    </radialGradient>
+    <radialGradient id="spotlight-right" cx="75%" cy="10%" r="70%">
+      <stop offset="0%" stop-color="#3a1222" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#020203" stop-opacity="0.95" />
+    </radialGradient>
+  </defs>
+
+  <!-- Pared del fondo -->
+  <rect width="1000" height="600" fill="#050507" />
+
+  <!-- Cortinas del escenario -->
+  <path d="M 0,0 Q 120,250 150,420 L 0,420 Z" fill="#200508" />
+  <path d="M 1000,0 Q 880,250 850,420 L 1000,420 Z" fill="#200508" />
+  <!-- Pliegues superiores de la cortina -->
+  <path d="M 0,0 Q 250,80 500,0 Q 750,80 1000,0 L 1000,50 Q 750,130 500,50 Q 250,130 0,50 Z" fill="#2d070b" />
+
+  <!-- Tarima del escenario -->
+  <polygon points="50,420 950,420 1000,600 0,600" fill="#0f0c08" stroke="#1f1a12" stroke-width="2" />
+  <path d="M 50,420 L 0,600 M 275,420 L 250,600 M 500,420 L 500,600 M 725,420 L 750,600 M 950,420 L 1000,600" stroke="#080604" stroke-width="3" />
+
+  <!-- Luces de enfoque (Focos) -->
+  <rect width="1000" height="600" fill="url(#spotlight-center)" opacity="0.6" />
+  <rect width="1000" height="600" fill="url(#spotlight-left)" opacity="0.4" />
+  <rect width="1000" height="600" fill="url(#spotlight-right)" opacity="0.4" />
+
+  <!-- Soportes / Pedestales vacíos para los animatrónicos -->
+  <!-- Pedestal Izquierdo -->
+  <ellipse cx="250" cy="430" rx="70" ry="15" fill="#18181f" stroke="#2a2a35" stroke-width="2" />
+  <!-- Pedestal Central -->
+  <ellipse cx="500" cy="435" rx="80" ry="18" fill="#18181f" stroke="#2a2a35" stroke-width="2" />
+  <!-- Pedestal Derecho -->
+  <ellipse cx="750" cy="430" rx="70" ry="15" fill="#18181f" stroke="#2a2a35" stroke-width="2" />
+
+  <!-- Sombras de los pedestales -->
+  <ellipse cx="250" cy="440" rx="60" ry="10" fill="#000000" opacity="0.6" />
+  <ellipse cx="500" cy="448" rx="70" ry="12" fill="#000000" opacity="0.6" />
+  <ellipse cx="750" cy="440" rx="60" ry="10" fill="#000000" opacity="0.6" />
+
+  <!-- Micrófono en el centro del escenario -->
+  <line x1="500" y1="420" x2="500" y2="350" stroke="#111" stroke-width="4" />
+  <circle cx="500" cy="345" r="7" fill="#333" stroke="#555" stroke-width="1" />
+  <ellipse cx="500" cy="420" rx="15" ry="5" fill="#111" />
+
+  <!-- Texto / Letrero del escenario -->
+  <rect x="380" y="70" width="240" height="45" fill="#0a0a0f" stroke="#1e202d" stroke-width="2" rx="5" />
+  <text x="500" y="98" fill="#552222" font-family="'Courier New', monospace" font-size="18" font-weight="bold" text-anchor="middle" letter-spacing="3">SHOWSTAGE</text>
+
+  <!-- Efecto de interferencia de cámara CORTV (Scanlines) -->
+  <path d="M 0,20 L 1000,20 M 0,60 L 1000,60 M 0,100 L 1000,100 M 0,140 L 1000,140 M 0,180 L 1000,180 M 0,220 L 1000,220 M 0,260 L 1000,260 M 0,300 L 1000,300 M 0,340 L 1000,340 M 0,380 L 1000,380 M 0,420 L 1000,420 M 0,460 L 1000,460 M 0,500 L 1000,500 M 0,540 L 1000,540 M 0,580 L 1000,580" stroke="#ffffff" stroke-width="1" opacity="0.03" />
+
+  <!-- Viñeta oscura alrededor de la cámara -->
+  <rect width="1000" height="600" fill="#000000" opacity="0.3" />
+</svg>

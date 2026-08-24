@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <!-- Fondo de la Cueva -->
+  <rect width="1000" height="600" fill="#0a0508"/>
+  <polygon points="150,100 850,100 850,500 150,500" fill="#140a10"/>
+  <polygon points="0,600 150,500 850,500 1000,600" fill="#050204"/>
+
+  <!-- Cortinas Púrpuras con Estrellas -->
+  <path d="M 100 80 Q 250 250 180 520 L 0 520 L 0 80 Z" fill="#3b112c" stroke="#1f0817" stroke-width="3"/>
+  <path d="M 900 80 Q 750 250 820 520 L 1000 520 L 1000 80 Z" fill="#3b112c" stroke="#1f0817" stroke-width="3"/>
+  
+  <!-- Estrellas amarillas descoloridas en las cortinas -->
+  <polygon points="80,180 85,195 100,195 88,205 92,220 80,210 68,220 72,205 60,195 75,195" fill="#8a7322" opacity="0.5"/>
+  <polygon points="900,220 905,235 920,235 908,245 912,260 900,250 888,260 892,245 880,235 895,235" fill="#8a7322" opacity="0.5"/>
+
+  <!-- Letrero de Fuera de Servicio -->
+  <rect x="380" y="420" width="240" height="70" fill="#523922" stroke="#2b1c0e" stroke-width="4" transform="rotate(-3 500 455)"/>
+  <text x="500" y="452" font-family="'Courier New', monospace" font-size="20" fill="#e6c280" font-weight="bold" text-anchor="middle" transform="rotate(-3 500 455)">OUT OF SERVICE</text>
+  
+  <!-- Sombra interior de la oscuridad del escenario -->
+  <ellipse cx="500" cy="300" rx="200" ry="120" fill="rgba(0,0,0,0.85)"/>
+</svg>
